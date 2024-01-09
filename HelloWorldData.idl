@@ -11,10 +11,13 @@
  */
 module HelloWorldData
 {
+  @final
   struct Msg
   {
-    long userID;
+    long index;
+    string from;
+    string to;
     string message;
+    boolean request;
   };
-  #pragma keylist Msg userID
 };
